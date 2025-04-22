@@ -1,0 +1,122 @@
+{
+    "vim.easymotion": true,
+    "vim.normalModeKeyBindings": [
+
+    ],
+    "vim.leader": "<Space>",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "k"],
+            "after": ["<esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["J"],
+            "commands": [":tabprev"]
+        },
+        {
+            "before": ["K"],
+            "commands": [":tabnext"]
+        },
+        {
+            "before": ["<Leader>", "j"],
+            "after": ["J"]
+        },
+        {
+            "before": ["<Leader>","<Leader>", "p"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        {
+            "before": ["<Leader>", "s"],
+            "commands": ["workbench.action.gotoSymbol"]
+        },
+        {
+            "before": ["<Leader>", "t", "o"],
+            "commands": [":tabo"]
+        },
+        {
+            "before": ["<Leader>", "/"],
+            "commands": [":noh"]
+        },
+        {
+            "before": ["<C-h>"],
+            "after": ["C-w", "h"]
+        },
+        {
+            "before": ["<C-j>"],
+            "after": ["C-w", "j"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["C-w", "l"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["C-w", "k"]
+        },
+        {
+            "before": ["C-w"],
+            "after": ["c-w", "k"]
+        },
+        //splits
+        {
+            "before": ["leader", "v"],
+            "commands": [":vsplit"]
+        },
+        {
+            "before": ["leader", "s"],
+            "commands": [":split"]
+        },
+        //panes
+        {
+            "before": ["leader", "h"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["leader", "j"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["leader", "k"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["leader", "l"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        {
+            "before": ["leader", "x"],
+            "commands": [":tabclose"]
+        },
+        //end of panes sections
+        {
+            "before": ["<C-w>", "c"],
+            "commands": ["workbench.action.joinAllGroups"]
+        },
+        {
+            "before": ["<Leader>", "p"],
+            "commands": ["workbench.action.quickOpen"]
+        }
+
+    ],
+
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-z>": false,
+        "<C-Z>": false,
+        "<C-i>": false,
+    },
+"vim.hlsearch": true,
+"vim.sneak": true,
+"git.ignoreRebaseWarning": true,
+"workbench.iconTheme": "vscode-icons",
+"[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"editor.minimap.enabled": false,
+"security.workspace.trust.untrustedFiles": "open",
+"chat.agent.enabled": true,
+"editor.accessibilitySupport": "off"
+}
